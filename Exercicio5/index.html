@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 5</title>
+  </head>
+  <body>
+    <h1>Gerador de Senhas Aleatórias</h1>
+    <p>
+      Crie uma função que gere uma senha aleatória com base em critérios
+      específicos, como incluir letras maiúsculas, minúsculas, números e
+      caracteres especiais.
+    </p>
+    <p>Selecione o tipo de caracter para sua senha:</p>
+
+    <div>
+      <p>Informe o tamanho da senha</p>
+      <input
+        type="text"
+        id="tamanho-da-senha"
+        name="Tamanho da Senha"
+        size="5"
+      />
+    </div>
+    <div>
+      <input type="checkbox" id="caracter_especial" name="caracter especial" />
+      <label for="caracter_especial">Caracteres Especiais</label>
+    </div>
+    <div>
+      <input
+        type="checkbox"
+        id="caracter_maiusculo"
+        name="caracter maiusculo"
+      />
+      <label for="caracter_maiusculo">Caracteres Maiúsculos</label>
+    </div>
+    <div>
+      <input
+        type="checkbox"
+        id="caracter_minusculo"
+        name="caracter minusculo"
+      />
+      <label for="caracter_minusculo">Caracteres Minusculos</label>
+    </div>
+    <div>
+      <input type="checkbox" id="caracter_numerico" name="caracter numerico" />
+      <label for="caracter_numerico">Caracteres Numéricos</label>
+    </div>
+    <div>
+      <button type="button" onclick="condicoesSenha()">Gerar Senha</button>
+    </div>
+    <div id="senha_gerada"></div>
+    <script src="geradorDeSenhasAleatorios.js"></script>
+  </body>
+</html>
